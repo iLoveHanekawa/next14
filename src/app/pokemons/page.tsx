@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-export default async function Page() {
-    const url = 'https://pokeapi.co/api/v2/pokemon-species'
-    const res = await fetch(url);
+export default async function Page(): Promise<JSX.Element> {
+    const url: string = 'https://pokeapi.co/api/v2/pokemon-species'
+    const res: Response = await fetch(url);
     const data: { results: { name: string, url: string }[] } = await res.json();
     return <div>
         <ul>

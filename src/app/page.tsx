@@ -7,7 +7,9 @@ export default function Home() {
         <Link href={'/dashboard'}>Dashboard</Link>
         <Link scroll={false} href={'/pokemons'}>Pokemons</Link>
         <Link href={'/pokemons#raticate'}>Raticate</Link>
-        <Link href={'/dashboard/some'}>Some</Link>
+        <Link href={'/dashboard/some?keya=arjun&keyb=xyz'}>Some</Link>
+        <Link href={'/redirect'}>Redirect to dashboard</Link>
+        <Link href={'/routerex'}>Redirect to dashboard using useRouter</Link>
     </main>
   );
 }
