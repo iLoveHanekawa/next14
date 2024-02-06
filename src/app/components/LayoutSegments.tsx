@@ -3,10 +3,10 @@
 import { useSelectedLayoutSegments } from "next/navigation"
 
 export const LayoutSegments: React.FC<{}> = () => {
-    const segments = useSelectedLayoutSegments();
+    const dashboardSegments = useSelectedLayoutSegments();
     return <ul>
-        {segments.map((segment: string, index: number) => {
-            return <li key={index}>Segment: {segment}</li>
+        {dashboardSegments.map((segment: string, index: number) => {
+            return <li key={index}>Custom Segment: {segment}</li>
         })}
     </ul>
 }
