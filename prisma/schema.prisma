@@ -12,6 +12,7 @@ datasource db {
 
 model User {
   id BigInt @id @db.BigInt @default(autoincrement())
+  username String
   post Post[]
 }
 
