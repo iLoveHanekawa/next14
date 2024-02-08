@@ -10,6 +10,9 @@ export default function Home() {
         <Link href={'/dashboard/some?keya=arjun&keyb=xyz'}>Some</Link>
         <Link href={'/redirect'}>Redirect to dashboard</Link>
         <Link href={'/routerex'}>Redirect to dashboard using useRouter</Link>
+        <nav>
+          <Link href="/login">Open modal</Link>
+      </nav>
     </main>
   );
 }
