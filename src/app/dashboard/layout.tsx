@@ -18,6 +18,6 @@ export default function DashLayout({ children, x, y, z }: DashLayoutProps): JSX.
         {children}
         {x}
         {y}
-        {z}
+        {/* {z} */}
     </div>
 }

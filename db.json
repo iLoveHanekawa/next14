@@ -1,0 +1,32 @@
+{
+    "artists": [
+        {
+            "id": "1",
+            "name": "Lil Uzi Vert"
+        },
+        {
+            "id": "2",
+            "name": "Playboi Carti"
+        },
+        {
+            "id": "3",
+            "name": "Lucki"
+        },
+        {
+            "id": "4",
+            "name": "Travis Scott"
+        },
+        {
+            "id": "5",
+            "name": "Ye"
+        },
+        {
+            "id": "6",
+            "name": "Drake"
+        },
+        {
+            "id": "7",
+            "name": "Ice Spice"
+        }
+    ]
+}

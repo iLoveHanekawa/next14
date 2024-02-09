@@ -8,6 +8,14 @@ declare global {
   var prisma: undefined | ReturnType<typeof prismaClientSingleton>
 }
 
+type BigIntWithSerializer = {
+  toJSON: () => string
+} & typeof globalThis.BigInt.prototype
+
+(globalThis.BigInt.prototype as BigIntWithSerializer).toJSON = function() {       
+  return this.toString()
+}
+
 const prisma = globalThis.prisma ?? prismaClientSingleton()
 
 export default prisma
