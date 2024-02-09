@@ -4,6 +4,8 @@ import prisma from "../../../db";
 // export const revalidate: RevalidateRouteSegmentConfig = 20;
 export const dynamic: DynamicRouteSegmentConfig = "force-dynamic";
 import { User } from "@prisma/client";
+import { UserSAForm } from "../ui/userSAForm";
+import { UsersList } from "../ui/userlist";
 
 async function getUsers(): Promise<{ users: User[]} | null> {
     try {
@@ -21,6 +23,8 @@ export default async function Page(): Promise<JSX.Element | null> {
         return (
             <div>
                 <AddUserForm />
+                <UserSAForm users={data?.users} />
+                <p className="font-bold">ServerComp</p>
                 <ul>
                     {data?.users?.map((user, index) => {
                         return <li key={index}>
