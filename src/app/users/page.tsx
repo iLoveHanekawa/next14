@@ -5,7 +5,6 @@ import prisma from "../../../db";
 export const dynamic: DynamicRouteSegmentConfig = "force-dynamic";
 import { User } from "@prisma/client";
 import { UserSAForm } from "../ui/userSAForm";
-import { UsersList } from "../ui/userlist";
 
 async function getUsers(): Promise<{ users: User[]} | null> {
     try {
